@@ -1,18 +1,21 @@
-// 1
 const express = require('express'), 
 app = express(),
 morgan = require('morgan');
 
-// 2
+var user = require('./models/user');
+
 app.use(morgan('dev'));
 
-// 3
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-// 4
+app.get('/users', function (req, res) {
+  var bootStrappedUsers = user.bootStrappedUsers;
+  console.log(bootStrappedUsers);
+  res.send(bootStrappedUsers);
+});
+
 app.listen(5678, function () {
    console.log('listening on port 5678!');
 });
-
