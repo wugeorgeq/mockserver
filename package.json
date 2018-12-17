@@ -1,0 +1,12 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "mock webserver",
+  "main": "index.js",
+  "author": "George Wu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
