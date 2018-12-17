@@ -1,4 +1,4 @@
-var bootStrappedUsers = [
+export var bootStrappedUsers = [
     {
         id:0,
         name:"George Wu",
@@ -11,6 +11,4 @@ var bootStrappedUsers = [
         username:"teresahahm",
         password:"123"
     }
-];
-
-module.exports.bootStrappedUsers = bootStrappedUsers;
+]
